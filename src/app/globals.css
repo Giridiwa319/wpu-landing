@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+@layer base{
+  :root {
+    --foreground: #e5e7eb;
+    --background: #fff;
+    --dark:#232323;
+    --border:#cecece;
+    --font-display:'Urbanist',sans-serif;
+    --font-body:"Inter",sans-serif;
+  }
+}
+
+@layer base {
+ *{
+  @apply border-border
+ }
+ body{
+  @apply font-body text-dark
+ }
+}
